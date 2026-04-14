@@ -1,5 +1,5 @@
 {
-  "name": "dependency-confusion-hacker-lab",
+  "name": "dependency-confusion-hacker222222-lab",
   "version": "1.0.0",
   "description": "🧪 Testing environment for Dependency Confusion vulnerability - All internal packages are FAKE names not registered on npm",
   "private": false,
@@ -7,10 +7,10 @@
     "lodash": "4.17.21",
     "axios": "1.6.0",
     "@acme-internal/auth-ssss": "1.0.0",
-    "@corp-secrets/wwqw-lib": "2.0.0",
-    "publiccccc-db-poc-2026": "1.0.0",
-    "company-logger-yyyy-test": "1.0.0",
-    "sso-helper-publiccc": "3.0.0"
+    "@corp-secrets/wwqw2222222-lib": "2.0.0",
+    "publiccccc-db-poc222222-2026": "1.0.0",
+    "compan222222y-logger-yyyy-test": "1.0.0",
+    "sso-helpe2222222222r-publiccc": "3.0.0"
   },
   "scripts": {
     "preinstall": "echo '⚠️ Testing: If you see this from a fake package, dependency confusion is possible'",
