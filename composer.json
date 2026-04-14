@@ -1,0 +1,6 @@
+{
+    "require": {
+        "php-vuln-lib": "999.0.0",
+        "composer-vuln-helper": "999.0.0"
+    }
+}
