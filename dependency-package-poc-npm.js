@@ -1,18 +1,24 @@
-// Package.json would have: express, lodash, moment, axios, chalk, unused-package-1, unused-package-2
+// These packages should NOT exist in public npm registry
+// If attacker publishes them, npm will pull from public instead of private
+
+// VULNERABLE: Internal-only packages (not on public npm)
+const internalAuth = require('@mycompany/internal-auth');
+const sharedUtils = require('@myorg/shared-utils');
+const paymentGateway = require('payment-gateway-internal');
+const dbConnector = require('db-connector-private');
+const loggingLib = require('logging-lib-internal');
+
+// Legitimate packages (exist on public npm)
 const express = require('express');
 const _ = require('lodash');
-// const moment = require('moment'); // Commented - NOT USED
-// const axios = require('axios'); // NOT USED
-// const chalk = require('chalk'); // NOT USED
 
 const app = express();
 
-app.get('/', (req, res) => {
-  const data = [1, 2, 3, 4, 5];
-  const processed = _.map(data, n => n * 2);
-  res.json({ result: processed });
+app.get('/user/:id', (req, res) => {
+  const userId = req.params.id;
+  const auth = internalAuth.validate(userId);
+  const userData = sharedUtils.formatUser(auth);
+  res.json(userData);
 });
 
-app.listen(3000, () => {
-  console.log('Server running on port 3000');
-});
+app.listen(3000);
