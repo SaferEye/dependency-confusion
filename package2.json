@@ -1,0 +1,12 @@
+{
+  "name": "internal-app",
+  "dependencies": {
+    "@mycompany/internal-auth": "^1.0.0",
+    "@myorg/shared-utils": "^2.1.0",
+    "payment-gateway-internal": "^3.0.0",
+    "db-connector-private": "^1.2.0",
+    "logging-lib-internal": "^0.1.0",
+    "express": "^4.18.0",
+    "lodash": "^4.17.21"
+  }
+}
