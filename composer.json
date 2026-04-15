@@ -1,6 +1,11 @@
 {
     "require": {
-        "php-vuln-lib": "999.0.0",
-        "composer-vuln-helper": "999.0.0"
+        "internal/auth-manager": "^1.0",
+        "company/payment-processor": "^2.0",
+        "private/redis-cluster": "^0.5",
+        "internal/audit-logger": "^1.1",
+        "company/secrets-client": "^3.0",
+        "monolog/monolog": "^3.4",
+        "guzzlehttp/guzzle": "^7.8"
     }
 }
